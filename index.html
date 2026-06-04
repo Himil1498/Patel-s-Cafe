@@ -40,6 +40,23 @@ body {
   overflow: hidden;
 }
 
+.logo-wrapper {
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.cafe-logo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--secondary-color);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  display: block;
+  margin: 0 auto;
+}
+
 .header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
@@ -256,6 +273,9 @@ body {
 <body>
 
   <header class="header">
+    <div class="logo-wrapper">
+      <img src="Logo.jpeg" alt="Patel's Cafe Logo" class="cafe-logo">
+    </div>
     <h1>Patel's Food & Cafe</h1>
     <p>Premium Quality • Authentic Taste</p>
     <div class="veg-badge">
