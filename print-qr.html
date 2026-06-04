@@ -128,64 +128,23 @@
       * {
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
-      }
-      @page {
-        margin: 0;
+        color-adjust: exact !important;
       }
       body {
-        background-color: white;
-        align-items: center;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        background-color: white !important;
+        align-items: flex-start !important;
+        padding-top: 50px !important;
       }
       .qr-card {
-        box-shadow: none;
-        border: none;
-        max-width: 100%;
-        width: 100%;
-        border-radius: 0;
-        margin: 0;
+        margin: 0 auto !important;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1) !important;
+        border: 1px solid rgba(0,0,0,0.1) !important;
+        border-radius: 24px !important;
+        overflow: hidden !important;
+        max-width: 450px !important;
       }
       .qr-header {
         background: linear-gradient(135deg, var(--primary-color), #5A0C0E) !important;
-        padding: 80px 20px;
-        border-radius: 0;
-      }
-      .qr-header::after {
-        display: none !important;
-      }
-      .qr-header h1 {
-        font-size: 4rem;
-      }
-      .qr-header p {
-        font-size: 1.5rem;
-      }
-      .qr-body {
-        padding: 60px 40px;
-      }
-      .instruction {
-        font-size: 2.5rem;
-        margin-bottom: 40px;
-      }
-      .qr-code-wrapper {
-        box-shadow: none;
-        border: 4px solid var(--primary-color);
-        padding: 20px;
-        margin-bottom: 50px;
-      }
-      .qr-code-wrapper img {
-        width: 400px;
-        height: 400px;
-      }
-      .veg-badge {
-        font-size: 1.5rem;
-        padding: 15px 30px;
-      }
-      .veg-dot {
-        width: 20px;
-        height: 20px;
       }
     }
   </style>
