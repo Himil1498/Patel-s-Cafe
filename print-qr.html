@@ -125,15 +125,24 @@
     }
     
     @media print {
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
       body {
         background-color: white;
         align-items: flex-start;
         padding-top: 50px;
+        display: block;
       }
       .qr-card {
         box-shadow: none;
         border: none;
-        max-width: 500px;
+        max-width: 80%;
+        margin: 0 auto;
+      }
+      .qr-header {
+        background: linear-gradient(135deg, var(--primary-color), #5A0C0E) !important;
       }
     }
   </style>
